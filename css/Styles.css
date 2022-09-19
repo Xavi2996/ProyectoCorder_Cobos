@@ -1,0 +1,398 @@
+:root {
+    --fuenteheading: "PT Sans", sans-serif;
+    --fuenteParrafos: "Open Sans", sans-serif;
+  
+    --primario: #784d3c;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #e1e1e1;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;         /*1 rem igual a 10 px  es mejor apra pantallas grandes*/
+  }
+  
+  *,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: "PT Sans";*/
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+/*Globales*/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+a{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteheading);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+img {
+  max-width: 100%;
+}
+
+  /*Utilidades*/
+.centrar-texto{
+    text-align: center;
+}
+
+.margen-superior{
+  margin-top: 2rem;
+}
+
+/*Header*/
+
+.header{
+    background-image: url(../Imagenes/fondo_prueba5.jfif);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header_texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+  }
+
+.logo {
+  color: var(--blanco);
+}
+.logo__nombre {
+  font-weight: 400;
+}
+.logo__bold {
+  font-weight: 700;
+}
+
+@media (min-width: 769px) {
+    .navegacion {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+  }
+nav a:hover{
+  color: yellow;
+}
+
+
+.barra {
+    padding: 4rem;
+  }
+
+@media (min-width: 769px) {
+    .barra {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .barra__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+.footer {
+    background-color: var(--negro);
+    padding: 3rem;
+  }
+
+  /*HOME*/
+
+@media (min-width: 769px){
+  .servicio_home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4rem;
+  }  
+}
+
+  /*SERVICIOS*/
+
+.frase{
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+
+.peluqueria{
+    background-image: url(../Imagenes/pelqieria_portada1.jfif);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cosmetologia{
+    background-image: url(../Imagenes/cosmetologia_portada.jfif);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media (min-width: 769px){
+  .servicio_solo{
+    display: flex;
+    margin: 20px 0px;
+}
+}
+
+.servicio-texto{
+  padding: 10px;
+}
+
+/*UBICACION*/
+
+.ubicacion{
+  margin: 1.5rem;
+
+}
+/*Sobre Nosotros*/
+
+
+@media (min-width: 768px){
+  .presentacion{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.descripcion_del_servicio{
+  margin: 1.5rem;
+}
+
+@media (min-width: 768px){
+  .valores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+
+/* GALERIA*/
+
+@media (min-width: 769px){
+  .contenedor-galeria { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+      "foto-grande foto-grande foto1 foto2"
+      "foto-grande foto-grande foto3 foto4";
+  }
+  .contenedor-galeria1 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+      "foto-grande1 foto-grande1 foto11 foto21"
+      "foto-grande1 foto-grande1 foto31 foto41";
+  }
+  .foto-grande{ 
+    grid-area: foto-grande;
+    background-image: url(../imagenes/peluqueria_galeri1.jfif);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 2rem;
+  
+   }
+  
+  .foto1 { 
+    grid-area: foto1; 
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+  }
+  
+  .foto2 { 
+    grid-area: foto2;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+  
+  .foto3 { 
+    grid-area: foto3;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+  
+  .foto4 { 
+    grid-area: foto4; 
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  
+  .foto-grande1{ 
+    grid-area: foto-grande1;
+    background-image: url(../imagenes/masajes.jfif);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 2rem;
+  
+   }
+  
+  .foto11 { 
+    grid-area: foto11; 
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .foto21 { 
+    grid-area: foto21;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+  
+  .foto31 { 
+    grid-area: foto31; 
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .foto41 { 
+    grid-area: foto41; 
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+}
+
+
+/**Contacto*/
+
+.contacto-bg {
+  background-image: url(imagenes/fondo_prueba1.jfif);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Formulario*/
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.campo__field {
+  flex: 1;
+  border: 1px solid var(--gris);
+}
+
+.campo_field--textarea {
+  height: 20rem;
+}
+
+.boton {
+  display: block;
+  font-family: var(--fuenteheading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+.boton--primario {
+  background-color: var(--negro);
+}
