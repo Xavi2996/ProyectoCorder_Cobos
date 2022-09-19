@@ -248,7 +248,7 @@ nav a:hover{
   }
   .foto-grande{ 
     grid-area: foto-grande;
-    background-image: url(../imagenes/peluqueria_galeri1.jfif);
+    background-image: url(../Imagenes/peluqueria_galeri1.jfif);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,7 +293,7 @@ nav a:hover{
   
   .foto-grande1{ 
     grid-area: foto-grande1;
-    background-image: url(../imagenes/masajes.jfif);
+    background-image: url(../Imagenes/masajes.jfif);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,7 +340,7 @@ nav a:hover{
 /**Contacto*/
 
 .contacto-bg {
-  background-image: url(imagenes/fondo_prueba1.jfif);
+  background-image: url(Imagenes/fondo_prueba1.jfif);
   height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
