@@ -1,6 +1,7 @@
 :root {
     --fuenteheading: "PT Sans", sans-serif;
-    --fuenteParrafos: "MsMadi", sans-serif;
+    --fuenteParrafos: "Krub", sans-serif;
+    --fuentefrases: "Ms Madi", sans-serif;
   
     --primario: #784d3c;
     --blanco: #ffffff;
@@ -78,6 +79,9 @@ img {
 .margen-superior{
   margin-top: 2rem;
 }
+.margen-inferior{
+    margin-bottom: 2rem;
+  }
 
 /*Header*/
 
@@ -104,6 +108,60 @@ img {
 .logo__bold {
   font-weight: 700;
 }
+
+.contenedor{
+    .barra{
+        .sin-decoracion{
+            text-decoration: none;
+            font-family: var(--fuenteParrafos);
+            font-size: 1.6rem;
+            line-height: 2;
+            .titulo-principal{
+                font-family: var(--fuenteheading);
+                line-height: 1.2;
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+        .navegacion{
+            .paginas{
+                font-family: var(--fuenteParrafos);
+                font-size: 18px;
+                line-height: 2;
+            }
+        }
+
+    }
+}
+
+.introduccion{
+    font-family: var(--fuenteheading);
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container{
+    .parrafos-sub3{
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+.parrafos{
+    font-family: var(--fuenteParrafos);
+    font-size: 18px;
+    line-height: 2;
+}
+
+.header_texto{
+    .parrafos{
+        font-family: var(--fuenteParrafos);
+        font-size: 18px;
+        line-height: 2;
+    }
+}
+
+
 
 @media (min-width: 769px) {
     .navegacion {
@@ -154,6 +212,16 @@ nav a:hover{
 }
 
   /*HOME*/
+
+  .contenedor{
+    .centrar-texto {
+        .frase{
+            font-family: var(--fuentefrases);
+            font-size: 3rem;
+        }
+    }
+    
+}
 
 .video video{
   max-width: 95%;
