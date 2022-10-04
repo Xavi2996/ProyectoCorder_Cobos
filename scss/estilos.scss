@@ -1,3 +1,6 @@
+$foto_grande1: url(../Imagenes/peluqueria_galeri1.jfif);
+$foto_grande2: url(../Imagenes/peluqueria_galeri1.jfif);
+
 :root {
     --fuenteheading: "PT Sans", sans-serif;
     --fuenteParrafos: "Krub", sans-serif;
@@ -107,6 +110,23 @@ img {
 }
 .logo__bold {
   font-weight: 700;
+}
+
+.contenedor{
+    .barra__footer{
+        .sin-decoracion{
+            text-decoration: none;
+            font-family: var(--fuenteParrafos);
+            font-size: 1.6rem;
+            line-height: 2;
+            .titulo-principal{
+                font-family: var(--fuenteheading);
+                line-height: 1.2;
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+    }
 }
 
 .contenedor{
@@ -329,7 +349,8 @@ nav a:hover{
       "foto-grande1 foto-grande1 foto11 foto21"
       "foto-grande1 foto-grande1 foto31 foto41";
   }
-  .foto-grande{ 
+
+.foto-grande{ 
     grid-area: foto-grande;
     background-image: url(../Imagenes/peluqueria_galeri1.jfif);
     height: 60rem;
@@ -337,40 +358,31 @@ nav a:hover{
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 2rem;
-  
-   }
-  
-  .foto1 { 
+      
+       }
+
+   @mixin fotos_galeria {
     grid-area: foto1; 
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+   }
   
+  .foto1 { 
+    @include fotos_galeria;
   }
   
   .foto2 { 
-    grid-area: foto2;
-    height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include fotos_galeria;
    }
   
   .foto3 { 
-    grid-area: foto3;
-    height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include fotos_galeria;
    }
   
   .foto4 { 
-    grid-area: foto4; 
-    height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include fotos_galeria;
   }
   
   
@@ -386,35 +398,19 @@ nav a:hover{
    }
   
   .foto11 { 
-    grid-area: foto11; 
-    height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include fotos_galeria;
   }
   
   .foto21 { 
-    grid-area: foto21;
-    height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include fotos_galeria;
    }
   
   .foto31 { 
-    grid-area: foto31; 
-    height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include fotos_galeria;
   }
   
   .foto41 { 
-    grid-area: foto41; 
-    height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include fotos_galeria;
   }
   
 }

@@ -111,6 +111,19 @@ img {
   font-weight: 700;
 }
 
+.contenedor .barra__footer .sin-decoracion {
+  text-decoration: none;
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.contenedor .barra__footer .sin-decoracion .titulo-principal {
+  font-family: var(--fuenteheading);
+  line-height: 1.2;
+  font-size: 32px;
+  font-weight: 700;
+}
+
 .contenedor .barra .sin-decoracion {
   text-decoration: none;
   font-family: var(--fuenteParrafos);
@@ -316,21 +329,21 @@ nav a:hover {
     background-position: center center;
   }
   .foto2 {
-    grid-area: foto2;
+    grid-area: foto1;
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
   .foto3 {
-    grid-area: foto3;
+    grid-area: foto1;
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
   .foto4 {
-    grid-area: foto4;
+    grid-area: foto1;
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -346,28 +359,28 @@ nav a:hover {
     border-radius: 2rem;
   }
   .foto11 {
-    grid-area: foto11;
+    grid-area: foto1;
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
   .foto21 {
-    grid-area: foto21;
+    grid-area: foto1;
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
   .foto31 {
-    grid-area: foto31;
+    grid-area: foto1;
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
   .foto41 {
-    grid-area: foto41;
+    grid-area: foto1;
     height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
